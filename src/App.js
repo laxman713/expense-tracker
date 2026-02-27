@@ -1,11 +1,14 @@
-import Loginpage from "./pages/RegisterPage";
-
+import Register from "./pages/RegisterPage";
+import LoginPage from "./pages/LoginPage";
+import { Routes, Route} from "react-router-dom";
 function App() {
   return (
     <>
-    Expense Tracker
-    <Loginpage/>
-    </>
+<Routes>
+  <Route path="/RegisterPage" element={<Register/>}/>
+    <Route path="/LoginPage" element={<LoginPage/>}/>
+
+  </Routes>    </>
   );
 }
 
